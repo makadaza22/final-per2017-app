@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.per.maka.final_redes_app.MainActivity"
+    android:background="@drawable/bglogin">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="140dp"
+                android:id="@+id/logoGame"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logologin"
+                />
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tu nombre"
+                android:layout_marginTop="60dp"
+                android:textColor="@color/colorLight"
+                android:layout_below="@+id/logoGame"
+                android:layout_centerHorizontal="true"/>
+
+
+            <EditText
+                android:id="@+id/editPlayer"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLight"
+                android:layout_below="@id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"/>
+
+            <Button
+                android:id="@+id/submitPlayer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPlayer"
+                android:background="@color/colorAccent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:text="start"
+                android:textSize="20dp"
+                android:textColor="@color/colorLight"/>
+
+            <!--Loader-->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/loaderContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_below="@+id/submitPlayer"
+                android:layout_centerHorizontal="true">
+
+                <ProgressBar
+                    android:id="@+id/progressLoader"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:indeterminateDrawable="@drawable/loader"
+                    android:max="100"
+                    android:progress="20"/>
+
+                <TextView
+                    android:id="@+id/loadingMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorLight"
+                    android:text="Waiting for partners..."
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

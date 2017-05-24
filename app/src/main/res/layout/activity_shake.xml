@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.per.maka.final_redes_app.Shake"
+    android:background="@drawable/bglogin">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/logoGame"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logologin"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logoGame"
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="140dp"
+        android:textSize="34dp"
+        android:text="Great job team!"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/textTitle"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLight"
+        android:layout_margin="50dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:text="Almost done,
+Shake your phone to get a promo code"/>
+
+    <ProgressBar
+        android:id="@+id/progressLoader"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminateDrawable="@drawable/loader"
+        android:max="100"
+        android:progress="20"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
